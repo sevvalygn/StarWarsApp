@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: #0c0c0c;
+  color: #e0e0e0;
+  min-height: 100vh;
+}
+
+a {
+  color: #ffc107;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#root {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  color: #ffc107;
+  margin: 0 0 24px;
+  font-size: 1.75rem;
+}
+
+input[type="text"] {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 16px;
+  font-size: 1rem;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background: #1a1a1a;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+input[type="text"]::placeholder {
+  color: #888;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #ffc107;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  background: #ffc107;
+  color: #000;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover:not(:disabled) {
+  background: #ffca28;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card {
+  display: block;
+  padding: 16px 20px;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 12px;
+  color: inherit;
+  text-align: left;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.card:hover {
+  border-color: #ffc107;
+  background: #222;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card h3 {
+  margin: 0 0 8px;
+  color: #ffc107;
+  font-size: 1.15rem;
+}
+
+.card p {
+  margin: 4px 0;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.detail-page {
+  padding: 20px 0;
+}
+
+.detail-page h2 {
+  color: #ffc107;
+  margin: 0 0 24px;
+  font-size: 1.5rem;
+}
+
+.detail-grid {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.detail-row {
+  display: flex;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid #333;
+}
+
+.detail-row span:first-child {
+  font-weight: 600;
+  color: #888;
+  min-width: 180px;
+}
+
+.detail-row span:last-child {
+  color: #e0e0e0;
+}
+
+.back-btn {
+  background: transparent;
+  color: #ffc107;
+  border: 1px solid #ffc107;
+  margin-top: 8px;
+}
+
+.back-btn:hover {
+  background: rgba(255, 193, 7, 0.15);
+}
+
+.loading,
+.error {
+  text-align: center;
+  padding: 40px 20px;
+  color: #888;
+}
+
+.error {
+  color: #f44336;
+}
+
+.empty {
+  color: #888;
+  padding: 20px 0;
+}
